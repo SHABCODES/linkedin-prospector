@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Prospector — AI GTM Intelligence</title>
+  <meta name="description" content="AI-powered LinkedIn prospect discovery, enrichment, qualification and personalised outreach generation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- ── Header ─────────────────────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-name">LinkedIn Prospector</span>
+          <span class="brand-tag">AI GTM Intelligence</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div id="mode-badge" class="mode-badge loading">Checking mode...</div>
+        <button id="export-csv-btn" class="btn btn-ghost" onclick="exportCSV()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export CSV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────────────────────────── -->
+  <main class="main">
+
+    <!-- Search Panel -->
+    <section class="search-panel glass-card" id="search-panel">
+      <div class="search-header">
+        <h1 class="search-title">Find Your Next Prospect</h1>
+        <p class="search-subtitle">Describe who you're looking for in plain English. The AI handles discovery, enrichment, scoring and outreach copy.</p>
+      </div>
+      <div class="search-form">
+        <div class="search-input-wrap">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input
+            id="search-query"
+            type="text"
+            class="search-input"
+            placeholder='e.g. "VP Sales at Series B SaaS companies, India"'
+            value="VP Sales at Series B SaaS companies, India"
+          />
+        </div>
+        <div class="search-options">
+          <div class="option-group">
+            <label class="option-label">Max results</label>
+            <select id="max-results" class="option-select">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="15">15</option>
+              <option value="25">25</option>
+            </select>
+          </div>
+          <div class="option-group">
+            <label class="option-label">Country</label>
+            <select id="country" class="option-select">
+              <option value="IN" selected>🇮🇳 India</option>
+              <option value="US">🇺🇸 USA</option>
+              <option value="GB">🇬🇧 UK</option>
+              <option value="SG">🇸🇬 Singapore</option>
+            </select>
+          </div>
+          <button id="search-btn" class="btn btn-primary" onclick="runSearch()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Run Pipeline
+          </button>
+        </div>
+      </div>
+      <!-- Pipeline steps indicator -->
+      <div class="pipeline-steps">
+        <div class="pipeline-step" id="step-discover">
+          <div class="step-dot"></div>
+          <span>Discover</span>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step" id="step-enrich">
+          <div class="step-dot"></div>
+          <span>Enrich</span>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step" id="step-qualify">
+          <div class="step-dot"></div>
+          <span>Qualify</span>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step" id="step-personalise">
+          <div class="step-dot"></div>
+          <span>Personalise</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats bar -->
+    <div id="stats-bar" class="stats-bar hidden">
+      <div class="stat-item">
+        <span class="stat-value" id="stat-total">0</span>
+        <span class="stat-label">Total Found</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value green" id="stat-strong">0</span>
+        <span class="stat-label">Strong Fit</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value yellow" id="stat-possible">0</span>
+        <span class="stat-label">Possible Fit</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value red" id="stat-weak">0</span>
+        <span class="stat-label">Weak Fit</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value purple" id="stat-role-change">0</span>
+        <span class="stat-label">Role Changes</span>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div id="filter-bar" class="filter-bar hidden">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all" onclick="filterProspects('all', this)">All</button>
+      <button class="filter-btn" data-filter="strong" onclick="filterProspects('strong', this)">🟢 Strong</button>
+      <button class="filter-btn" data-filter="possible" onclick="filterProspects('possible', this)">🟡 Possible</button>
+      <button class="filter-btn" data-filter="weak" onclick="filterProspects('weak', this)">🔴 Weak</button>
+      <button class="filter-btn" data-filter="role_change" onclick="filterProspects('role_change', this)">🔄 Role Change</button>
+    </div>
+
+    <!-- Loading state -->
+    <div id="loading" class="loading-state hidden">
+      <div class="spinner-ring"></div>
+      <div class="loading-text" id="loading-text">Initialising pipeline...</div>
+      <div class="loading-sub">Running discovery → enrichment → qualification → personalisation</div>
+    </div>
+
+    <!-- Results grid -->
+    <div id="results-grid" class="results-grid"></div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="empty-state">
+      <div class="empty-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+      </div>
+      <h3>Ready to find prospects</h3>
+      <p>Enter a search query above and click <strong>Run Pipeline</strong> to discover, enrich and qualify LinkedIn prospects with AI.</p>
+    </div>
+  </main>
+
+  <!-- ── Outreach Modal ──────────────────────────────────────────────────────── -->
+  <div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal(event)">
+    <div class="modal glass-card" id="modal">
+      <button class="modal-close" onclick="closeModal()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-avatar" id="modal-avatar"></div>
+        <div>
+          <h2 class="modal-name" id="modal-name"></h2>
+          <p class="modal-title" id="modal-title"></p>
+        </div>
+      </div>
+      <div class="modal-tabs">
+        <button class="tab-btn active" id="tab-connection" onclick="switchTab('connection')">Connection Note</button>
+        <button class="tab-btn" id="tab-followup" onclick="switchTab('followup')">Follow-up DM</button>
+        <button class="tab-btn" id="tab-reasoning" onclick="switchTab('reasoning')">Fit Analysis</button>
+      </div>
+      <div class="tab-content" id="tab-connection-content">
+        <div class="copy-header">
+          <span class="copy-label">LinkedIn Connection Request</span>
+          <span class="char-count" id="connection-char-count"></span>
+          <button class="btn-copy" onclick="copyText('connection-text')">Copy</button>
+        </div>
+        <div class="copy-box" id="connection-text"></div>
+        <div class="copy-tip">💡 LinkedIn hard limit: 300 characters. This note is crafted to be specific, not generic.</div>
+      </div>
+      <div class="tab-content hidden" id="tab-followup-content">
+        <div class="copy-header">
+          <span class="copy-label">Follow-up DM (after they accept)</span>
+          <button class="btn-copy" onclick="copyText('followup-text')">Copy</button>
+        </div>
+        <div class="copy-box" id="followup-text"></div>
+        <div class="copy-tip">💡 References a specific signal from their profile — not a generic template.</div>
+      </div>
+      <div class="tab-content hidden" id="tab-reasoning-content">
+        <div class="reasoning-block">
+          <div class="reasoning-score-row">
+            <div>
+              <div class="reasoning-label">ICP Fit Score</div>
+              <div class="reasoning-score" id="reasoning-score"></div>
+            </div>
+            <div class="fit-badge-large" id="reasoning-label"></div>
+          </div>
+          <div class="reasoning-text" id="reasoning-text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

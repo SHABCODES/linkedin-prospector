@@ -1,0 +1,335 @@
+[
+  {
+    "linkedin_url": "https://www.linkedin.com/in/arjun-sharma-vp-sales",
+    "full_name": "Arjun Sharma",
+    "headline": "VP Sales @ Groww | Ex-Razorpay | B2B SaaS | Fintech",
+    "occupation": "VP Sales at Groww",
+    "location": "Bengaluru, Karnataka, India",
+    "industry": "Financial Services",
+    "summary": "10+ years building high-velocity B2B sales teams at fintech and SaaS companies. Recently led Razorpay's mid-market expansion and now scaling Groww's institutional sales vertical.",
+    "experiences": [
+      {
+        "company": "Groww",
+        "title": "VP Sales",
+        "starts_at": {"year": 2024, "month": 3},
+        "ends_at": null,
+        "description": "Leading a team of 25 AEs and SDRs for institutional and B2B product lines."
+      },
+      {
+        "company": "Razorpay",
+        "title": "Head of Mid-Market Sales",
+        "starts_at": {"year": 2021, "month": 6},
+        "ends_at": {"year": 2024, "month": 2},
+        "description": "Grew mid-market ARR from ₹40Cr to ₹180Cr in 2.5 years."
+      }
+    ],
+    "education": [
+      {"school": "IIM Bangalore", "degree": "MBA", "field_of_study": "Marketing & Strategy", "ends_at": {"year": 2014}}
+    ],
+    "activities": [
+      {
+        "title": "Why most SaaS SDR teams are set up to fail — and what the top 1% do differently",
+        "link": "https://www.linkedin.com/posts/arjun-sharma-vp-sales_1234",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/priya-menon-gtm",
+    "full_name": "Priya Menon",
+    "headline": "Director of GTM | Series B SaaS | PLG → Enterprise Motion | Bengaluru",
+    "occupation": "Director of GTM at Saaslabs",
+    "location": "Bengaluru, Karnataka, India",
+    "industry": "Software Development",
+    "summary": "Building and scaling go-to-market engines at early-stage SaaS companies. Passionate about PLG, inbound-led outbound, and RevOps automation.",
+    "experiences": [
+      {
+        "company": "Saaslabs",
+        "title": "Director of GTM",
+        "starts_at": {"year": 2023, "month": 9},
+        "ends_at": null,
+        "description": "Owning demand gen, sales, and CS for Series B product-led growth SaaS."
+      },
+      {
+        "company": "Chargebee",
+        "title": "Senior Product Marketing Manager",
+        "starts_at": {"year": 2020, "month": 4},
+        "ends_at": {"year": 2023, "month": 8}
+      }
+    ],
+    "education": [
+      {"school": "BITS Pilani", "degree": "B.E.", "field_of_study": "Computer Science", "ends_at": {"year": 2018}}
+    ],
+    "activities": [
+      {
+        "title": "We just crossed ₹10Cr ARR — here's what our GTM motion actually looks like",
+        "link": "https://www.linkedin.com/posts/priya-menon-gtm_5678",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/rahul-kapoor-cto-fintech",
+    "full_name": "Rahul Kapoor",
+    "headline": "CTO @ PaySprint (YC W23) | Payments Infrastructure | ex-Stripe Engineering",
+    "occupation": "CTO at PaySprint",
+    "location": "Mumbai, Maharashtra, India",
+    "industry": "Financial Technology",
+    "summary": "Building the infrastructure layer for B2B payments in India. Previously at Stripe (SF) for 4 years. YC W23 batch.",
+    "experiences": [
+      {
+        "company": "PaySprint",
+        "title": "CTO & Co-Founder",
+        "starts_at": {"year": 2023, "month": 1},
+        "ends_at": null
+      },
+      {
+        "company": "Stripe",
+        "title": "Senior Software Engineer",
+        "starts_at": {"year": 2019, "month": 3},
+        "ends_at": {"year": 2022, "month": 12}
+      }
+    ],
+    "education": [
+      {"school": "IIT Bombay", "degree": "B.Tech", "field_of_study": "Computer Science", "ends_at": {"year": 2019}}
+    ],
+    "activities": [
+      {
+        "title": "Raising a seed round? Here's what 6 months of YC meetings taught me about investor pitching",
+        "link": "https://www.linkedin.com/posts/rahul-kapoor-cto_9012",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/deepa-nair-vp-marketing-saas",
+    "full_name": "Deepa Nair",
+    "headline": "VP Marketing @ LeadSquared | Demand Gen | Account-Based Marketing | SaaS Growth",
+    "occupation": "VP Marketing at LeadSquared",
+    "location": "Bengaluru, Karnataka, India",
+    "industry": "Software Development",
+    "summary": "15 years in B2B marketing with deep expertise in demand generation, ABM, and marketing ops for SaaS companies.",
+    "experiences": [
+      {
+        "company": "LeadSquared",
+        "title": "VP Marketing",
+        "starts_at": {"year": 2022, "month": 7},
+        "ends_at": null
+      },
+      {
+        "company": "Freshworks",
+        "title": "Director of Demand Generation",
+        "starts_at": {"year": 2018, "month": 2},
+        "ends_at": {"year": 2022, "month": 6}
+      }
+    ],
+    "education": [
+      {"school": "Symbiosis Institute of Business Management", "degree": "MBA", "field_of_study": "Marketing", "ends_at": {"year": 2009}}
+    ],
+    "activities": [
+      {
+        "title": "ABM on a startup budget: the exact playbook we used to land 3 enterprise accounts this quarter",
+        "link": "https://www.linkedin.com/posts/deepa-nair-marketing_3456",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/vikram-anand-ceo-hrtech",
+    "full_name": "Vikram Anand",
+    "headline": "CEO @ HireVeda | HR Tech SaaS | Future of Work | Series A",
+    "occupation": "CEO at HireVeda",
+    "location": "Delhi, India",
+    "industry": "Human Resources",
+    "summary": "Founder of HireVeda, an AI-powered hiring platform. Former McKinsey consultant turned entrepreneur. Series A backed by Sequoia India.",
+    "experiences": [
+      {
+        "company": "HireVeda",
+        "title": "CEO & Founder",
+        "starts_at": {"year": 2021, "month": 5},
+        "ends_at": null
+      },
+      {
+        "company": "McKinsey & Company",
+        "title": "Engagement Manager",
+        "starts_at": {"year": 2015, "month": 9},
+        "ends_at": {"year": 2021, "month": 4}
+      }
+    ],
+    "education": [
+      {"school": "IIM Ahmedabad", "degree": "MBA", "field_of_study": "General Management", "ends_at": {"year": 2015}}
+    ],
+    "activities": [
+      {
+        "title": "We just closed our Series A. Here's what I'd do differently in the fundraising process",
+        "link": "https://www.linkedin.com/posts/vikram-anand-ceo_7890",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/sneha-iyer-head-sales-b2b",
+    "full_name": "Sneha Iyer",
+    "headline": "Head of Enterprise Sales | B2B SaaS | ex-Salesforce | Hyderabad",
+    "occupation": "Head of Enterprise Sales at Whatfix",
+    "location": "Hyderabad, Telangana, India",
+    "industry": "Software Development",
+    "summary": "Enterprise SaaS sales leader with a track record of building 7-figure ARR pipelines from scratch. 8 years at Salesforce before joining Whatfix.",
+    "experiences": [
+      {
+        "company": "Whatfix",
+        "title": "Head of Enterprise Sales",
+        "starts_at": {"year": 2023, "month": 11},
+        "ends_at": null
+      },
+      {
+        "company": "Salesforce",
+        "title": "Senior Account Executive",
+        "starts_at": {"year": 2015, "month": 3},
+        "ends_at": {"year": 2023, "month": 10}
+      }
+    ],
+    "education": [
+      {"school": "XLRI Jamshedpur", "degree": "PGDM", "field_of_study": "Business Management", "ends_at": {"year": 2015}}
+    ],
+    "activities": [
+      {
+        "title": "Cold email open rate of 68%? Here's the exact subject line framework I use for enterprise prospects",
+        "link": "https://www.linkedin.com/posts/sneha-iyer-sales_2345",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/aditya-bose-growth-saas",
+    "full_name": "Aditya Bose",
+    "headline": "Head of Growth @ Zomentum | Partner Ecosystem | Channel Sales | Series B",
+    "occupation": "Head of Growth at Zomentum",
+    "location": "Pune, Maharashtra, India",
+    "industry": "Software Development",
+    "summary": "Building growth engines for B2B SaaS companies through channel, partnerships, and product-led growth. Love working at the intersection of product and sales.",
+    "experiences": [
+      {
+        "company": "Zomentum",
+        "title": "Head of Growth",
+        "starts_at": {"year": 2024, "month": 1},
+        "ends_at": null
+      },
+      {
+        "company": "Capillary Technologies",
+        "title": "Growth & Partnerships Manager",
+        "starts_at": {"year": 2020, "month": 6},
+        "ends_at": {"year": 2023, "month": 12}
+      }
+    ],
+    "education": [
+      {"school": "SP Jain School of Global Management", "degree": "MBA", "field_of_study": "Marketing & Strategy", "ends_at": {"year": 2020}}
+    ],
+    "activities": [
+      {
+        "title": "Channel-led growth is underrated. Here's how we added ₹2Cr ARR in Q1 without hiring a single new AE",
+        "link": "https://www.linkedin.com/posts/aditya-bose-growth_6789",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/kavitha-ram-revops",
+    "full_name": "Kavitha Ram",
+    "headline": "Revenue Operations Lead @ MoEngage | CRM | Sales Automation | GTM Strategy",
+    "occupation": "Revenue Operations Lead at MoEngage",
+    "location": "Bengaluru, Karnataka, India",
+    "industry": "Software Development",
+    "summary": "RevOps practitioner obsessed with removing friction from the buyer journey. Building the GTM tech stack and process layer at MoEngage.",
+    "experiences": [
+      {
+        "company": "MoEngage",
+        "title": "Revenue Operations Lead",
+        "starts_at": {"year": 2022, "month": 4},
+        "ends_at": null
+      },
+      {
+        "company": "CleverTap",
+        "title": "Sales Operations Manager",
+        "starts_at": {"year": 2019, "month": 8},
+        "ends_at": {"year": 2022, "month": 3}
+      }
+    ],
+    "education": [
+      {"school": "Narsee Monjee Institute of Management Studies", "degree": "MBA", "field_of_study": "Finance & Operations", "ends_at": {"year": 2019}}
+    ],
+    "activities": [
+      {
+        "title": "The RevOps metrics every sales leader should be tracking (but probably isn't)",
+        "link": "https://www.linkedin.com/posts/kavitha-ram-revops_1357",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/sanjay-krishnamurthy-vp-engineering",
+    "full_name": "Sanjay Krishnamurthy",
+    "headline": "VP Engineering @ Darwinbox | Platform Engineering | Scale | ex-Amazon",
+    "occupation": "VP Engineering at Darwinbox",
+    "location": "Hyderabad, Telangana, India",
+    "industry": "Human Resources Technology",
+    "summary": "Engineering leader with a passion for building highly scalable distributed systems. Led infrastructure at Amazon India before joining Darwinbox's leadership team.",
+    "experiences": [
+      {
+        "company": "Darwinbox",
+        "title": "VP Engineering",
+        "starts_at": {"year": 2023, "month": 6},
+        "ends_at": null
+      },
+      {
+        "company": "Amazon",
+        "title": "Senior Engineering Manager",
+        "starts_at": {"year": 2017, "month": 2},
+        "ends_at": {"year": 2023, "month": 5}
+      }
+    ],
+    "education": [
+      {"school": "IIT Madras", "degree": "M.Tech", "field_of_study": "Computer Science", "ends_at": {"year": 2017}}
+    ],
+    "activities": [
+      {
+        "title": "How we reduced our API p99 latency by 60% without rewriting the core service",
+        "link": "https://www.linkedin.com/posts/sanjay-kris-eng_2468",
+        "activity_status": "posted"
+      }
+    ]
+  },
+  {
+    "linkedin_url": "https://www.linkedin.com/in/meenakshi-pillai-cso",
+    "full_name": "Meenakshi Pillai",
+    "headline": "Chief Sales Officer @ Exotel | Cloud Communications | CCaaS | SaaS Scale",
+    "occupation": "Chief Sales Officer at Exotel",
+    "location": "Bengaluru, Karnataka, India",
+    "industry": "Telecommunications",
+    "summary": "Sales leader with 18 years of experience scaling enterprise and SMB sales for cloud communications platforms. Leading all of Exotel's revenue teams across India, SEA and ME.",
+    "experiences": [
+      {
+        "company": "Exotel",
+        "title": "Chief Sales Officer",
+        "starts_at": {"year": 2021, "month": 9},
+        "ends_at": null
+      },
+      {
+        "company": "Knowlarity",
+        "title": "VP Enterprise Sales",
+        "starts_at": {"year": 2016, "month": 4},
+        "ends_at": {"year": 2021, "month": 8}
+      }
+    ],
+    "education": [
+      {"school": "FMS Delhi", "degree": "MBA", "field_of_study": "Sales & Marketing", "ends_at": {"year": 2006}}
+    ],
+    "activities": [
+      {
+        "title": "CCaaS is becoming a commodity. Here's how to differentiate on value when the product is parity",
+        "link": "https://www.linkedin.com/posts/meenakshi-pillai-cso_3579",
+        "activity_status": "posted"
+      }
+    ]
+  }
+]
