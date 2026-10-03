@@ -11,7 +11,7 @@ An end-to-end GTM automation system for prospect discovery, enrichment, ICP qual
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```mermaid
 graph TD
@@ -28,7 +28,7 @@ graph TD
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 1. **AI-Driven ICP Qualification:** Uses Google Gemini to score prospects qualitatively (Reasons & Risks) paired with a deterministic base score matrix (Industry, Role, Size, Signals).
 2. **Deduplication Engine:** Prevents duplicate enrichment API calls and tracks prospect lifecycle intelligently to save API credits.
@@ -39,7 +39,7 @@ graph TD
 
 ---
 
-## 🚀 Quick Start (Mock Mode)
+## Quick Start (Mock Mode)
 
 By default, the application runs in a Hybrid Mock Mode. It uses synthetic profiles to save API credits, but still uses live AI to evaluate them.
 
@@ -57,7 +57,7 @@ Navigate to `http://localhost:8000` to view the dashboard!
 
 ---
 
-## 🔑 Environment Variables (Live Data)
+## Environment Variables (Live Data)
 
 To unlock live Apollo data, real AI, and CRM sync, create a `.env` file in the root directory:
 
@@ -69,6 +69,6 @@ To unlock live Apollo data, real AI, and CRM sync, create a `.env` file in the r
 
 ---
 
-## 🛡 B2B Data Strategy
+## B2B Data Strategy
 
 Unauthorized scraping of LinkedIn violates Terms of Service. This project uses **Apollo.io** — a licensed API that redistributes B2B data compliantly. **Mock mode** (default fallback) uses highly-realistic fixture profiles so the entire stack can be tested without API keys.
